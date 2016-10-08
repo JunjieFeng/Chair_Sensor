@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.junjiefeng.javasucks.MainActivity"
+    android:orientation="vertical"
+    android:gravity="center_horizontal|center_vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:gravity="center"
+        android:textSize="30sp"
+        android:text="@string/HW1"
+        android:id="@+id/textView"
+        android:textColor="#238745"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:id="@+id/tasktitle"
+        android:hint="@string/hint1"
+        android:layout_below="@id/textView"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:textColorHint="#238745"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:gravity="center"
+        android:id="@+id/task_des"
+        android:hint="@string/hint2"
+        android:layout_below="@+id/tasktitle"
+        android:layout_centerHorizontal="true"
+        android:textColorHint="#238745"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button"
+        android:padding="10dp"
+        android:text="@string/button"
+        android:textSize="15sp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:onClick="onClick" />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/button"
+        android:layout_below="@+id/task_des"
+        android:id="@+id/task_list"
+        android:foregroundGravity="center"
+        android:headerDividersEnabled="true"
+        android:longClickable="true">
+    </ListView>
+</RelativeLayout>

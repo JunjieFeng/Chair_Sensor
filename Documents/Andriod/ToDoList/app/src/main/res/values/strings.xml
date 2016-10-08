@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">To-do List</string>
+    <string name="HW1">To Do List</string>
+    <string name="hint1">Input task title</string>
+    <string name="hint2">Input task description</string>
+    <string name="button">Add</string>
+</resources>
